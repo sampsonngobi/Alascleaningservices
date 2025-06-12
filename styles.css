@@ -1,0 +1,219 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #f4f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+/* Header / Hero */
+header {
+  background: #0066cc;
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+/* header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+} */
+header .logo{
+    width: 200px;
+    border: 2px solid rgb(19, 216, 9);
+    border-radius: 100px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.btn-primary {
+  background: white;
+  border: none;
+  color: #0072c6;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin: 0.5rem;
+  font-weight: 900;
+}
+.btn-primary:hover {
+  background: #01548f;
+  color: white;
+  transform: scale(1.05);
+}
+.contact-buttons a {
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+  background: #25d366; /* WhatsApp green */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.contact-buttons a.email {
+  background: #4697d1;
+  text-decoration: none;
+}
+.contact-buttons a:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Services Section */
+section.services {
+  background: white;
+  padding: 2rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.05);
+}
+section.services h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #0066cc;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.service-item {
+  background: #e0f2f1;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+}
+.service-item:hover {
+  transform: scale(1.05);
+}
+.service-item h3 {
+  margin-bottom: 0.6rem;
+  color: #0066cc;
+}
+
+article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+
+/* Booking Section */
+section.booking {
+  background: white;
+  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
+}
+section.booking h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+form.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: red;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #5817f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+input[type="date"], input[type="time"] {
+  cursor: pointer;
+}
+button.submit-btn {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  justify-self: center;
+  width: fit-content;
+}
+button.submit-btn:hover {
+  background: #00796b;
+  transform: scale(1.05);
+}
+.confirmation-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: green;
+  font-weight: 600;
+  display: none;
+}
+
+/* Testimonials Section */
+section.testimonials {
+  width: 90%;
+  background: #e0f2f1;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 1.5rem;
+  box-shadow: 0 0 10px rgb(0 0 0 );
+  align-self: center;
+}
+
+footer{
+    background-color: #0066cc;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    height: 50px;
+}
+
+footer a {
+    color: white;
+    font-weight: 600;
+
+}
+footer a:hover {
+ color:rgb(187, 182, 182)
+}

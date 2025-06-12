@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alas Cleaning Service</title>
+
+  <link rel="stylesheet" href="styles.css" />
+   <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="imgaes/logo.png" alt="Alas cleaning Services logo" class="logo">
+      <p>Making Your Space Shine</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">WhatsApp</a>
+        <a href="mailto:contact@sparkleclean.com" class="email" aria-label="Send us an email">Email Us</a>
+      </div>
+      <button class="btn-primary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book a Cleaning Now</button>
+    </div>
+  </header>
+
+  <section class="services container" aria-label="Our cleaning services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <article class="service-item">
+        <h3>Home Cleaning</h3>
+        <p>Deep home cleaning with eco-friendly products.</p>
+        <img src="imgaes/services-image1.png" alt="cleaning image">
+    </article>
+    <article class="service-item">
+        <h3>Office Cleaning</h3>
+        <p>Maintain a healthy, productive workspace.</p>
+        <img src="imgaes/services-image2.png" alt="cleaning image">
+    </article>
+    <article class="service-item">
+        <h3>Move-In/Move-Out</h3>
+        <p>Stress-free moving with expert cleaning.</p>
+        <img src="imgaes/services-image3.png" alt="cleaning image">
+    </article>
+    <article class="service-item">
+        <h3>Window / Door Cleaning</h3>
+        <p>Intensive cleaning for glass windows and doors.</p>
+        <img src="imgaes/services-image4.png" alt="cleaning image">
+      </article>
+    </div>
+  </section>
+
+  <section id="booking" class="booking" aria-label="Booking form for cleaning services">
+    <h2>Book Your Cleaning</h2>
+    <form id="bookingForm" class="booking-form" novalidate>
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" required min="" aria-required="true" />
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required aria-required="true" />
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1234567890" required aria-required="true" />
+
+      <label for="address">Service Address:</label>
+      <textarea id="address" name="address" placeholder="Your full address" rows="2" required aria-required="true"></textarea>
+
+      <label for="service">Service Type:</label>
+      <select id="service" name="service" required aria-required="true">
+        <option value="" disabled selected>Select a service</option>
+        <option value="home">Home Cleaning</option>
+        <option value="office">Office Cleaning</option>
+        <option value="move">Move-In/Move-Out</option>
+        <option value="deep">Deep Cleaning</option>
+      </select>
+
+      <label for="notes">Additional Notes (optional):</label>
+      <textarea id="notes" name="notes" rows="3" placeholder="Anything else you'd like to tell us?"></textarea>
+
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+    <p class="confirmation-message" id="confirmationMessage">Thank you for your booking! We will contact you shortly.</p>
+  </section>
+
+  <section class="testimonials container" aria-label="Customer testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote class="testimonial">
+      “Alas Cleaning Services left my apartment spotless! Will use again.”
+      <strong>– Maria F.</strong>
+    </blockquote>
+    <blockquote class="testimonial">
+      “Professional, fast, and affordable. Highly recommended!”
+      <strong>– Lucas D.</strong>
+    </blockquote>
+  </section>
+
+  <section class="faqs container" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How much does it cost?</summary>
+      <p>Prices depend on the size of the space and service type. Contact us for a free quote.</p>
+    </details>
+    <details>
+      <summary>What areas do you cover?</summary>
+      <p>Currently serving [City Name] and surrounding areas.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p>© <span id="footer-year"></span> | Sampson Ngobi. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>

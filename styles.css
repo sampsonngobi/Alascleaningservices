@@ -88,6 +88,41 @@ header p {
   text-decoration: none;
 }
 
+
+/* About section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #e0f2f1;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-section ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+
 /* Services Section */
 section.services {
   background: white;
@@ -206,7 +241,7 @@ footer{
     text-align: center;
     padding: 10px;
     color: white;
-    height: 50px;
+    height: 80px;
 }
 
 footer a {
